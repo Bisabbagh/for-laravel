@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f8f8f8; /* Add background color as needed */
+    padding: 10px 0; /* Adjust padding as needed */
+}
+
+nav.primary-navigation {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px; /* Adjust margin as needed */
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    color: #3ca0e7;
+}
