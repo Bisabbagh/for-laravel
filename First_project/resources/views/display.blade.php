@@ -13,6 +13,16 @@
         <button>Log out</button>
         
     </form>
+    <div style="border :3px solid black">
+        <h2>create a new post</h2>
+        <form action="\create-post" method="POST">
+            @csrf
+            <input type="text" name="title" placeholder="title">
+            <textarea name="body" placeholder="body content"></textarea>
+            <button> save the </button>
+
+        </form>
+    </div>
         
 @else
 <div style="border :3px solid black">
@@ -28,6 +38,20 @@
     
     </form>
     </div>
+    <div style="border :3px solid black">
+        <h2> login</h2>
+        
+        <form action="/login" method="POST">
+        @csrf 
+        <input type="text" placeholder="loginName" name="loginname">
+        
+        <input type="password" placeholder="loginPassword" name="loginpassword">
+        <button>login</button>
+        
+        
+        </form>
+        <h1>hello</h1>
+        </div>
 
     @endauth
 

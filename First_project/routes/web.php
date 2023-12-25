@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 /*
@@ -14,8 +15,13 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', function () {//rout --- method (tow paranmetar : the bath, result(function) the function in controla rview:the name of page
-    return view('login');
+    return view('display');
 });
+//Route::get('/forphoto', function () {//rout --- method (tow paranmetar : the bath, result(function) the function in controla rview:the name of page
+  //  return view('forphoto');
+//});
 Route::post('/register', [UserController::class,'register']);//[name of the class,name of the method]
 Route::post('/logout',[UserController::class,'logout']);
 Route::post('/login',[UserController::class,'login']);
+Route::post('/create-post',[PostController::class,'createpost']);
+
